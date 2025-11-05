@@ -32,4 +32,14 @@ public class Practice_review
             return false;
         }
     }
+    public double calculatePay(double hours, double wage){
+        double totalPay = hours * wage;
+        double netPay  = totalPay * 0.70;
+        return netPay;
+    }
+    public double paySalary(String fullName, double hour, double wage){
+        double netPay = calculatePay(hour, wage);
+        System.out.println(fullName + " was sent " + netPay + "CAD");
+        return netPay;
+    }
 }
