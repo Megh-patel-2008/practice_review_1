@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 /**
  * Write a description of class Practice_review here.
  *
@@ -17,5 +18,18 @@ public class Practice_review
     }
     public void setName(String name){
         this.name = name;
+    }
+    private HashMap<String, Integer> groupSizes;
+    public HashMap<String, Integer> getGroupSizes(){
+        return groupSizes;
+    }
+    public boolean canRide(int age){
+        if(age>10){
+            System.out.println("You can ride the rollercoaster!!!");
+            return true;
+        }else{
+            System.out.println("You cannot ride the rollercoaster. Maybe Next time");
+            return false;
+        }
     }
 }
