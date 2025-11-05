@@ -7,10 +7,15 @@ import java.util.ArrayList;
  */
 public class Practice_review
 {
-    String name = "Megh";
     Integer age = 17;
     ArrayList<String>words = new ArrayList<>();
     private int year;
     public final double PRICE = 10.00;
-    
+    public String name;
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
 }
